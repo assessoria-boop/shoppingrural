@@ -43,7 +43,7 @@
 
     /* ── TOPO ── */
     .topo {
-      background: var(--marca);
+      background: #09a9f3;
       color: rgba(255,255,255,0.92);
       text-align: center;
       padding: 9px 20px;
@@ -147,7 +147,7 @@
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(160deg, #f8f8f8 0%, #f0f0f0 60%, #e8e8e8 100%);
+      background: #fff;
       z-index: 0;
     }
 
@@ -252,9 +252,9 @@
 
     /* ── STATS ── */
     .stats {
-      background: var(--cinza-claro);
-      border-top: 1px solid var(--borda);
-      border-bottom: 1px solid var(--borda);
+      background: var(--marca);
+      border-top: 1px solid var(--marca);
+      border-bottom: 1px solid var(--marca);
       padding: 28px 48px;
     }
 
@@ -269,17 +269,18 @@
     .stat {
       text-align: center;
       padding: 8px 16px;
-      border-right: 1px solid var(--borda);
+      border-right: 1px solid rgba(255,255,255,0.25);
     }
     .stat:last-child { border-right: none; }
-    .stat-num   { font-size: 26px; font-weight: 900; color: var(--marca); letter-spacing: -1px; }
-    .stat-label { font-size: 12px; color: var(--cinza); margin-top: 4px; font-weight: 500; }
+    .stat-num   { font-size: 26px; font-weight: 900; color: #fff; letter-spacing: -1px; }
+    .stat-label { font-size: 12px; color: rgba(255,255,255,0.85); margin-top: 4px; font-weight: 500; }
 
     /* ── SEÇÕES GERAIS ── */
     .sec {
       padding: 88px 48px;
       max-width: 1100px;
       margin: 0 auto;
+      background: #fff;
     }
 
     .sec-tag {
@@ -416,7 +417,7 @@
 
     /* ── DEPOIMENTOS ── */
     .sec-depoi {
-      background: var(--cinza-claro);
+      background: #fff;
       padding: 88px 0;
     }
 
@@ -495,7 +496,7 @@
 
     /* ── CTA ── */
     .sec-cta-wrap {
-      background: linear-gradient(160deg, #e8f5e9 0%, #c8e6c9 60%, #a5d6a7 100%);
+      background: linear-gradient(160deg, #f0455a 0%, #d91726 60%, #b01220 100%);
     }
 
     .sec-cta {
@@ -511,9 +512,10 @@
       letter-spacing: -1px;
       line-height: 1.1;
       margin-bottom: 36px;
+      color: #fff;
     }
 
-    .sec-cta h2 span { color: var(--marca); }
+    .sec-cta h2 span { color: #fff; opacity: 0.9; }
 
     /* ── LOCALIZAÇÃO ── */
     .sec-local { background: var(--cinza-claro); padding: 88px 48px; }
@@ -583,14 +585,14 @@
       nav .nav-badge { display: none; }
 
       .hero { padding: 52px 20px 44px; }
-      .hero h1 { font-size: 36px; letter-spacing: -1px; }
+      .hero h1 { font-size: 42px; letter-spacing: -1px; }
       .hero-logo { width: 96px; height: 96px; }
       .hero-btns { max-width: 100%; }
       .loc-texto { white-space: normal; text-align: center; }
 
       .stats { padding: 0 20px; }
       .stats-inner { grid-template-columns: repeat(2, 1fr); }
-      .stat { padding: 20px 12px; border-right: 1px solid var(--borda); border-bottom: 1px solid var(--borda); }
+      .stat { padding: 20px 12px; border-right: 1px solid rgba(255,255,255,0.25); border-bottom: 1px solid rgba(255,255,255,0.25); }
       .stat:nth-child(2) { border-right: none; }
       .stat:nth-child(3) { border-bottom: none; }
       .stat:nth-child(4) { border-right: none; border-bottom: none; }
@@ -631,7 +633,7 @@
     }
 
     @media (max-width: 420px) {
-      .hero h1 { font-size: 32px; }
+      .hero h1 { font-size: 42px; }
       .servicos-grid { grid-template-columns: 1fr; }
       .review-img-card { max-width: 100%; }
     }
@@ -671,7 +673,7 @@
       <img src="logo.webp" alt="Shopping Rural Clínica Veterinária" decoding="async" loading="eager" />
     </div>
     <p class="hero-clinica-nome">Shopping Rural</p>
-    <h1><span>Clínica Veterinária 24H</span><br />Quando seu Pet Precisar</h1>
+    <h1><span style="color:#000;">Clínica<br />Veterinária</span> <span style="color:#d91726;">24H</span></h1>
     <div class="loc-texto">📍 <strong>Localização Privilegiada</strong> em Manhuaçu/MG</div>
     <div class="hero-btns">
       <a href="https://wa.me/5533999306001?text=Ol%C3%A1%20encontrei%20voc%C3%AAs%20pelo%20Google%2C%20gostaria%20de%20atendimento." class="btn-wpp">
@@ -797,14 +799,14 @@
       <div class="servico-icone">
         <svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
       </div>
-      <h3>Atendimento 7 dias</h3>
+      <h3>Atendimento 24h</h3>
       <p>De madrugada, fim de semana ou feriado — sempre prontos para cuidar do seu pet.</p>
     </div>
   </div>
 </div>
 
 <!-- POR QUÊ -->
-<div style="padding: 1px 0;">
+<div style="padding: 1px 0; background: #f4f4f5;">
   <div class="sec-porque">
     <div>
       <span class="sec-tag">Por que a Shopping Rural?</span>
